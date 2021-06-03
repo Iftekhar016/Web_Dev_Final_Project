@@ -50,7 +50,7 @@ function App() {
 		{
 			name: "Gifts, Endowments and Interest",
 			value: 0,
-			color: '#0f7ab4'
+			color: '#DC143C'
 		},
 		{
 			name: "Other",
@@ -83,27 +83,34 @@ function App() {
 		},
 		{
 			name: 'Instruction and Academic Support',
-			value: 0
+			value: 0,
+			color: '#f6e50e'
 		},
 		{
 			name: 'Research',
-			value: 0
+			value: 0,
+			color: '#7FFFD4'
 		},
 		{
 			name: 'Student Services and Financial Aid',
-			value: 0
+			value: 0,
+			color: '#5f63ec'
 		},
 		{
 			name: 'Depreciation/Interest Expenses',
-			value: 0
+			value: 0,
+			color: '#71A8FF'
 		},
 		{
 			name: 'Institutional Support',
-			value: 0
+			value: 0,
+			color:'#DC143C'
+
 		},
 		{
 			name: 'Other',
-			value: 0
+			value: 0,
+			color: '#00008B'
 		}
 	]);
 

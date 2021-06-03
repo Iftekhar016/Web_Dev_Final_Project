@@ -121,3 +121,39 @@ div {
 .container > p {
 	font-size: 15px;
 }
+
+.next-button{
+	display: center;
+	border-radius: 20px;
+	font-family: sans-serif;
+	font-size: small;
+}
+
+.previous-button{
+	display: center;
+	border-radius: 20px;
+	font-family: sans-serif;
+	font-size: small;
+}
+
+
+.compare-button{
+	display: center;
+	border-radius: 20px;
+	font-family: sans-serif;
+	font-size: small;
+	
+}
+
+.restart-button{
+	display: center;
+	border-radius: 20px;
+	font-family: sans-serif;
+	font-size: small;
+}
+
+.button{
+	display: flex;
+    justify-content: center;
+
+}

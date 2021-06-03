@@ -16,8 +16,8 @@ function Button(props) {
 	if (props.pageNum > 0 && props.pageNum < 3) {
 		return (
 			<div className='button'>
-				<button className='next-button' onClick={nextButton}>NEXT</button>
-				<button className='back-button' onClick={backButton}>BACK</button>
+				<button className='compare-button' onClick={nextButton}>COMPARE</button>
+				<button className='previous-button' onClick={backButton}>PREVIOUS</button>
 			</div>
 		)
 	}
