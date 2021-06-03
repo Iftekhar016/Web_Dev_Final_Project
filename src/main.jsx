@@ -8,4 +8,8 @@ ReactDOM.render(
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+  //npm install react-icons --save
+  //import {AiOutlineInfoCircle} from 'react-icons/ai'
+  //<AiOutlineInfoCircle/>
+
 )

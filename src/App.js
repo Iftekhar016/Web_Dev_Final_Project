@@ -5,19 +5,40 @@ import Intro from './Intro.jsx';
 import PieChart from './PieChart.jsx';
 import ProgressBar from './ProgressBar.jsx';
 import Button from './Buttons.jsx';
+import ToolTip from './ToolTip.jsx';
+import GraphTitle1 from './GraphTitle1.jsx';
+import GraphTitle2 from './GraphTitle2.jsx';
+import GraphTitle3 from './GraphTitle3.jsx';
+
 
 
 /* App */
 function App() {
 
-	let revenueData = [ { name: "Medical Center", value: 45, color: 'red' }, { name: "State Unrestricted", value: 8 }, { name: "Tuition", value: 11 }, { name: "Student Fees", value: 4 }, { name: "Grants and Contracts", value: 13 }, { name: "Pell Grants", value: 1 }, { name: "Non-educational Services", value: 11 }, { name: "Gifts, Endowments, Interest, Etc.", value: 7 } ]
+	let revenueData = [ { name: "Medical Center", value: 45, color: '#f0bf00' }, 
+						{ name: "State Unrestricted", value: 8, color: '#f6e50e' }, 
+						{ name: "Tuition", value: 11, color :'#fff688'}, 
+						{ name: "Student Fees", value: 4, color: '#5f63ec' }, 
+						{ name: "Grants and Contracts", value: 14, color: '71A8FF' }, 
+						{ name: "Non-educational Services", value: 11, color: '#0f7ab4' }, 
+						{ name: "Gifts, Endowments, Interest, Etc.", value: 7, color: '#0f7ab4' } 
+					]
 
-	let expenditureData = [ { name: "Medical Center", value: 43 }, { name: "Teaching and Teaching Support", value: 23 }, { name: "Research", value: 11 }, { name: "Student Services and Financial Aid", value: 8 }, { name: "Operations and Maintenance (Buildings, etc)", value: 2 }, { name: "Administration", value: 3 }, { name: "Non-Educational Services", value: 2 }, { name: "Public Service", value: 2 }, { name: "Depreciation, Interest, etc.", value: 6 } ]
+	let expenditureData = [ { name: "Medical Center", value: 43  }, 
+							{ name: "Teaching and Teaching Support", value: 23 }, 
+							{ name: "Research", value: 11 }, 
+							{ name: "Student Services and Financial Aid", value: 8 }, 
+							{ name: "Operations and Maintenance (Buildings, etc)", value: 2 }, 
+							{ name: "Administration", value: 3 }, 
+							{ name: "Non-Educational Services", value: 2 }, 
+							{ name: "Public Service", value: 2 }, 
+							{ name: "Depreciation, Interest, etc.", value: 6 } 
+						]
 
 
 	const [revenue, setRevenue] = useState([
 		{
-			name: 'Medical Center',
+			name: 'Medical Center',	
 			value: 0,
 			color: '#f0bf00'
 		},
@@ -143,7 +164,9 @@ function App() {
 				<h1 className='mainTitle'> Slice the Pie! </h1>
 				<Intro/>
 				<ProgressBar/>
+				<GraphTitle1/>
 				<PieChart data={revenue}/>
+				<ToolTip/>
 				<InputForm data={revenue} onChange={handleRevUpdate}/>
 				<Button pageNum={page} onPress={handlePageUpdate}/>
 			</div>
@@ -157,9 +180,10 @@ function App() {
 				<h1 className='mainTitle'> Hello World!!! </h1>
 				<Intro/>
 				<ProgressBar/>
+				<GraphTitle2/>
 				<PieChart data={expenses}/>
 				<InputForm data={expenses} onChange={handleExpUpdate}/>
-				<Button pageNum={page} onPress={handlePageUpdate}/>
+				<Button class = 'pageButton' pageNum={page} onPress={handlePageUpdate}/>
 			</div>
 		)
 	}
@@ -167,6 +191,7 @@ function App() {
 	else if (page===2) {
 		return (
 			<div>
+				<GraphTitle3/>
 				<PieChart data={revenueData}/>
 				<PieChart data={revenue}/>
 				<Button pageNum={page} onPress={handlePageUpdate}/>

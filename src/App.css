@@ -75,3 +75,24 @@ div {
 .container > p {
 	font-size: 15px;
 }
+
+.bulletPoint{
+	font-size: 150%;
+}
+
+.infoButton{
+	border-radius: 400px;
+}
+.graphTitle{
+	font-weight: bolder;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+.pageButton{
+	display: flex;
+	flex-direction: column;
+	color: blue;
+}
