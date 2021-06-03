@@ -11,6 +11,49 @@ div {
   margin: 10px;
 }
 
+.bulletPoint {
+	font-size: 150%;
+}
+
+.bp1 {
+	color: #f0bf00;
+	font-size: 150%;
+}
+
+.bp2 {
+	color: #f6e50e;
+	font-size: 150%;
+}
+
+.bp3 {
+	font-size: 150%;
+	color: #fff688;
+}
+
+.bp4 {
+	color: #5f63ec;
+	font-size: 150%;
+}
+
+.bp5 {
+	color: #71A8FF;
+	font-size: 150%;
+}
+
+.bp6 {
+	color: #0f7ab4;
+	font-size: 150%;
+}
+
+.bp7 {
+	color: #d4e4ff;
+	font-size: 150%;
+}
+
+.bp8 {
+	color: red;
+	font-size: 150%;
+}
 .mainTitle {
 	display: flex;
 	justify-content: center;
@@ -41,6 +84,9 @@ div {
 	width: 50%;
 	color: white;
 	margin: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
 }
 
 .right {

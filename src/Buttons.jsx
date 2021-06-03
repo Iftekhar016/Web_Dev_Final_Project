@@ -16,16 +16,16 @@ function Button(props) {
 	if (props.pageNum > 0 && props.pageNum < 3) {
 		return (
 			<div className='button'>
-				<button onClick={nextButton}>NEXT</button>
-				<button onClick={backButton}>BACK</button>
+				<button className='next-button' onClick={nextButton}>NEXT</button>
+				<button className='back-button' onClick={backButton}>BACK</button>
 			</div>
 		)
 	}
 
-	else if (props.pageNum === 0 || props.pageNum === 3) {
+	else if (props.pageNum === 0 || props.pageNum === 2) {
 		return (
 			<div className='button'>
-				<button  onClick={nextButton}>NEXT</button>
+				<button className='next-button' onClick={nextButton}>NEXT</button>
 			</div>
 		)
 	}
@@ -33,7 +33,7 @@ function Button(props) {
 	else {
 		return (
 			<div className='button'>
-				<button onClick={restartButton}>RESTART</button>
+				<button className='restart-button' onClick={restartButton}>RESTART</button>
 			</div>
 		)
 	}

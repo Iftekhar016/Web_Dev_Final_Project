@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import MyD3Component from "./MyD3Component.jsx";
 import './App.css';
 import InputForm from './InputForm.jsx';
 import Intro from './Intro.jsx';
@@ -39,7 +40,7 @@ function App() {
 		{
 			name: 'Grants and Contracts',
 			value: 0,
-			color: '71A8FF'
+			color: '#71A8FF'
 		},
 		{
 			name: 'Sales and Service, Auxillary',
@@ -140,9 +141,9 @@ function App() {
 	if (page === 0) {
 		return (
 			<div>
-				<h1 className='mainTitle'> Slice the Pie! </h1>
+				<h1 className='mainTitle'> Slice The Pie </h1>
 				<Intro/>
-				<ProgressBar/>
+				<ProgressBar page={page}/>
 				<PieChart data={revenue}/>
 				<InputForm data={revenue} onChange={handleRevUpdate}/>
 				<Button pageNum={page} onPress={handlePageUpdate}/>
@@ -154,9 +155,9 @@ function App() {
 	else if (page === 1) {
 		return (
 			<div>
-				<h1 className='mainTitle'> Hello World!!! </h1>
+				<h1 className='mainTitle'> Slice the Pie! </h1>
 				<Intro/>
-				<ProgressBar/>
+				<ProgressBar page={page}/>
 				<PieChart data={expenses}/>
 				<InputForm data={expenses} onChange={handleExpUpdate}/>
 				<Button pageNum={page} onPress={handlePageUpdate}/>
@@ -167,6 +168,9 @@ function App() {
 	else if (page===2) {
 		return (
 			<div>
+				<h1 className='mainTitle'> Slice The Pie </h1>
+				<Intro/>
+				<ProgressBar page={page}/>
 				<PieChart data={revenueData}/>
 				<PieChart data={revenue}/>
 				<Button pageNum={page} onPress={handlePageUpdate}/>
@@ -177,8 +181,12 @@ function App() {
 	else if (page === 3) {
 		return (
 			<div>
+				<h1 className='mainTitle'> Slice The Pie </h1>
+				<Intro/>
+				<ProgressBar page={page}/>
 				<PieChart data={expenditureData}/>
 				<PieChart data={expenses}/>
+				<Button pageNum={page} onPress={handlePageUpdate}/>
 			</div>
 		)
 	}
