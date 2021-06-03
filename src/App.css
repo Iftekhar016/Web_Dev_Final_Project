@@ -157,3 +157,19 @@ div {
     justify-content: center;
 
 }
+
+.graphTitle{
+	font-weight: bolder;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+.resultTitle{
+	font-weight: bolder;
+	font-size: 30px;
+	display: flex;
+	color: white;
+	justify-content: center;
+}
