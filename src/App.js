@@ -6,7 +6,8 @@ import Intro from './Intro.jsx';
 import PieChart from './PieChart.jsx';
 import ProgressBar from './ProgressBar.jsx';
 import Button from './Buttons.jsx';
-import ToolTip from './ToolTip.jsx';
+import ToolTip from './ToolTip.jsx'
+
 
 
 
@@ -179,7 +180,6 @@ function App() {
 				<ProgressBar page={page}/>
 				<h1 class = 'graphTitle'>UC Davis Revenues</h1>
 				<PieChart data={revenue}/>
-				<ToolTip/>
 				<InputForm data={revenue} onChange={handleRevUpdate}/>
 				<Button pageNum={page} onPress={handlePageUpdate}/>
 			</div>
