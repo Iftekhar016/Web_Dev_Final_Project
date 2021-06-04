@@ -67,12 +67,12 @@ function App() {
 		{
 			name: "Gifts, Endowments and Interest",
 			value: 0,
-			color: '#DC143C'
+			color: '#d4e4ff'
 		},
 		{
 			name: "Other",
 			value: 0,
-			color: '#d4e4ff'
+			color: '#DC143C'
 		}
 	])
 
@@ -158,6 +158,15 @@ function App() {
 		}
 		
 		else {
+			let updatedRevenue = revenue.map(item => { 
+				return {...item, value: 0}
+			})
+			setRevenue(updatedRevenue)
+
+			let updatedExpenses = expenses.map(item => { 
+				return {...item, value: 0}
+			})
+			setExpenses(updatedExpenses)
 			setPage(0)
 		}
 	}

@@ -8,18 +8,16 @@ function ToolTip() {
   const [tooltipIsOpen, setTooltipIsOpen] = React.useState(false);
   return (
     <div className="App">
-      <Tooltip arrow
-        placement="top-start"
+     <Tooltip arrow
+        placement='top-start'
         open={tooltipIsOpen}
         onOpen={() => setTooltipIsOpen(true)}
         onClose={() => setTooltipIsOpen(false)}
-        title="A large, not-for-profit regional medical center, including multiple hospitals, labs and clinics. Income comes from patients, medical insurance companies, and government programs like medicare."><Button><AiOutlineInfoCircle/></Button>
-        
-      
+        title="I'm a controlled tooltip"
+      >
+      <span></span>
       </Tooltip>
-        <Button
-          onClick={() => setTooltipIsOpen(!tooltipIsOpen)}
-        ></Button>
+      <AiOutlineInfoCircle onClick={() => setTooltipIsOpen(!tooltipIsOpen)}/>
     </div>
   );
 }

@@ -13,7 +13,7 @@ function Button(props) {
 		props.onPress('restart')
 	}
 
-	if (props.pageNum > 0 && props.pageNum < 3) {
+	if (props.pageNum > 0 && props.pageNum < 2) {
 		return (
 			<div className='button'>
 				<button className='compare-button' onClick={nextButton}>COMPARE</button>

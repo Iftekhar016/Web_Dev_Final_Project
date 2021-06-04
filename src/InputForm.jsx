@@ -57,7 +57,7 @@ function InputForm(props) {
 
 				<div className='container'> 
 					<li className = "bp2"></li>
-					<h4 className='left'> {props.data[1].name}<AiOutlineInfoCircle/> </h4>
+					<h4 className='left'> {props.data[1].name} <AiOutlineInfoCircle/> </h4>
 					<div className='input'>
 					<input  name={props.data[1].name} id={props.data[1].name} onChange={updateValue} placeholder='0%' className='large' value={props.data[1].value}/>
 					</div>
@@ -65,7 +65,7 @@ function InputForm(props) {
 
 				<div className='container'>
 					<li className = "bp3"></li> 
-					<h4 className='left'> {props.data[2].name}<AiOutlineInfoCircle/></h4>
+					<h4 className='left'> {props.data[2].name} <AiOutlineInfoCircle/></h4>
 					<div className='input'>
 					<input  name={props.data[2].name} id={props.data[2].name} onChange={updateValue} placeholder='0%' className='large' value={props.data[2].value}/>
 					</div>
@@ -73,7 +73,7 @@ function InputForm(props) {
 
 				<div className='container'>
 					<li className = "bp4"></li> 
-					<h4 className='left'> {props.data[3].name}<AiOutlineInfoCircle/> </h4>
+					<h4 className='left'> {props.data[3].name} <AiOutlineInfoCircle/> </h4>
 					<div className='input'>
 					<input  name={props.data[3].name} id={props.data[3].name} onChange={updateValue} placeholder='0%' className='large' value={props.data[3].value}/>
 					</div>
@@ -81,7 +81,7 @@ function InputForm(props) {
 
 				<div className='container'>
 					<li className = "bp5"></li>
-					<h4 className='left'> {props.data[4].name}<AiOutlineInfoCircle/> </h4>
+					<h4 className='left'> {props.data[4].name} <AiOutlineInfoCircle/> </h4>
 					<div className='input'>
 					<input  name={props.data[4].name} id={props.data[4].name} onChange={updateValue} placeholder='0%' className='large' value={props.data[4].value}/>
 					</div>
@@ -89,7 +89,7 @@ function InputForm(props) {
 
 				<div className='container'>
 					<li className = "bp6"></li> 
-					<h4 className='left'> {props.data[5].name}<AiOutlineInfoCircle/> </h4>
+					<h4 className='left'> {props.data[5].name} <AiOutlineInfoCircle/> </h4>
 					<div className='input'>
 					<input  name={props.data[5].name} id={props.data[5].name} onChange={updateValue} placeholder='0%' className='large' value={props.data[5].value}/>
 					</div>
@@ -97,7 +97,7 @@ function InputForm(props) {
 
 				<div className='container'>
 					<li className = "bp7"></li> 
-					<h4 className='left'> {props.data[6].name}<AiOutlineInfoCircle/> </h4>
+					<h4 className='left'> {props.data[6].name} <AiOutlineInfoCircle/> </h4>
 					<div className='input'>
 					<input  name={props.data[6].name} id={props.data[6].name} onChange={updateValue} placeholder='0%' className='large' value={props.data[6].value}/>
 					</div>

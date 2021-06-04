@@ -1,5 +1,6 @@
 body {
 	background-color: #2e2e2e;
+	font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -81,7 +82,7 @@ div {
 }
 
 .left {
-	width: 50%;
+	width: 90%;
 	color: white;
 	margin: 5px;
 	margin-left: 0px;
@@ -100,9 +101,9 @@ div {
 	width: 15%;
 	align-self: end;
 	border-top-style: none;
-  border-right-style: none;
-  border-left-style: none;
-  border-bottom-style: underline;
+    border-right-style: none;
+    border-left-style: none;
+   border-bottom-style: underline;
 	border-color: white;
 	color: white;
 	background-color: #2e2e2e;
@@ -116,6 +117,8 @@ div {
 	width: 50%;
 	flex-direction: row-reverse;
 	color: white;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .container > p {
@@ -123,39 +126,45 @@ div {
 }
 
 .next-button{
-	display: center;
-	border-radius: 20px;
-	font-family: sans-serif;
-	font-size: small;
+    display: center;
+    border-radius: 20px;
+    font-size: small;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 }
 
 .previous-button{
-	display: center;
-	border-radius: 20px;
-	font-family: sans-serif;
-	font-size: small;
+    display: center;
+    border-radius: 20px;
+    font-size: small;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 }
 
 
 .compare-button{
-	display: center;
-	border-radius: 20px;
-	font-family: sans-serif;
-	font-size: small;
-	
+    display: center;
+    border-radius: 20px;
+    font-size: small;
+    background: #0f7ab4;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+
 }
 
 .restart-button{
-	display: center;
-	border-radius: 20px;
-	font-family: sans-serif;
-	font-size: small;
+    display: center;
+    border-radius: 20px;
+    font-size: small;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 }
 
 .button{
-	display: flex;
+    display: flex;
     justify-content: center;
-
+	align-items: center;
+	flex-direction: column;
 }
 
 .graphTitle{
@@ -172,4 +181,8 @@ div {
 	display: flex;
 	color: white;
 	justify-content: center;
+}
+
+button {
+	padding: 5px 40px 5px 40px;
 }
