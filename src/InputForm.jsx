@@ -1,8 +1,8 @@
 import React from 'react';
 import {AiOutlineInfoCircle} from 'react-icons/ai'
+import Tooltip from "@material-ui/core/Tooltip";
 
 function InputForm(props) {
-
 	//console.log("INSIDE INPUT FORM WITH " + props.data[3].name)
 	function findSum(name='') {
 
@@ -49,7 +49,20 @@ function InputForm(props) {
 
 				<div className='container'>
 					<li className = "bp1"></li>
-					<h4 className='left'> {props.data[0].name} <AiOutlineInfoCircle/> </h4>
+					<h4 className='left'> {props.data[0].name} 
+					{/* <Tooltip
+						id='tooltip1'
+						name='tooltip1'
+						placement='top'
+						open={tooltipIsOpen}
+						onOpen={() => setTooltipIsOpen(true)}
+						onClose={() => setTooltipIsOpen(false)}
+						title="I'm a controlled tooltip"
+					>
+					<span></span>
+					</Tooltip> */}
+					<AiOutlineInfoCircle/> 
+					</h4>
 					<div className='input'>
 					<input  name={props.data[0].name} id={props.data[0].name} onChange={updateValue} placeholder='0%' className='large' value={props.data[0].value}/>
 					</div>
@@ -57,7 +70,17 @@ function InputForm(props) {
 
 				<div className='container'> 
 					<li className = "bp2"></li>
-					<h4 className='left'> {props.data[1].name} <AiOutlineInfoCircle/> </h4>
+					<h4 className='left'> {props.data[1].name} 
+					{/* <Tooltip
+						placement='top'
+						open={tooltipIsOpen}
+						onOpen={() => setTooltipIsOpen(true)}
+						onClose={() => setTooltipIsOpen(false)}
+						title="I'm a controlled tooltip"
+					>
+					<span></span>
+					</Tooltip> */}
+					<AiOutlineInfoCircle/>  </h4>
 					<div className='input'>
 					<input  name={props.data[1].name} id={props.data[1].name} onChange={updateValue} placeholder='0%' className='large' value={props.data[1].value}/>
 					</div>

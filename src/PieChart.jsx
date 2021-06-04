@@ -79,9 +79,9 @@ class PieChart extends React.Component {
 
     this.chartSvg.select('#chart-tooltip').remove();
     this.chartSvg.append('text')
-      .attr('x', pointer[0])
-      .attr('y', pointer[1] - 20)
-      .attr('fill', this.getColorValue(d.data.color) > 150 ? '#000000' : '#ffffff')
+      .attr('x', 0)
+      .attr('y', 150)
+      .attr('fill', 'white')
       // .attr('font-weight', 'bold')
       // .attr('stroke', this.getColorValue(d.data.color) > 150 ? '#ffffff' : '#000000')
       // .attr('stroke-width', 0.75)

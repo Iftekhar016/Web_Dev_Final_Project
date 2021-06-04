@@ -98,12 +98,12 @@ div {
 }
 
 .large {
-	width: 15%;
+	width: 50%;
 	align-self: end;
 	border-top-style: none;
     border-right-style: none;
     border-left-style: none;
-   border-bottom-style: underline;
+    border-bottom-style: underline;
 	border-color: white;
 	color: white;
 	background-color: #2e2e2e;
@@ -114,12 +114,14 @@ div {
 }
 .input {
 	display: flex;
-	width: 50%;
+	width: 20%;
 	flex-direction: row-reverse;
 	color: white;
 	margin-left: 0px;
 	margin-right: 0px;
 }
+
+
 
 .container > p {
 	font-size: 15px;
