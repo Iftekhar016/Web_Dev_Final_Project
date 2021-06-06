@@ -1,3 +1,4 @@
+import { transition } from 'd3-transition';
 import React from 'react';
 
 function ProgressBar(props) {
@@ -6,7 +7,8 @@ function ProgressBar(props) {
 		width: '25px',
 		'backgroundColor': '#0f7ab4',
 		'borderRadius': '50%',
-		margin: '0px'
+		margin: '0px',
+		transition: 'background-color 1.1s ease'
 	}
 	const main = {
 		display: 'flex',
@@ -28,7 +30,8 @@ function ProgressBar(props) {
 		width: '100px',
 		height: '6px',
 		'backgroundColor': '#0f7ab4',
-		'margin': '10px 0px 0px 0px'
+		'margin': '10px 0px 0px 0px',
+		transition: 'background-color 1s ease'
 	}
 
 	if (props.page === 0) {
